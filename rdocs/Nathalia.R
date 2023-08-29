@@ -661,4 +661,3 @@ ggplot(q47) +
   theme_estat()
 #ggsave("colunas-q47.pdf", width = 158, height = 93, units = "mm")
 
-
