@@ -195,6 +195,7 @@ ggplot(q36) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,8) +
   labs(x = "Questão 36", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q36.pdf", width = 158, height = 93, units = "mm")
@@ -236,6 +237,7 @@ ggplot(q37) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,5.5) +
   labs(x = "Questão 37", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q37.pdf", width = 158, height = 93, units = "mm")
@@ -277,6 +279,7 @@ ggplot(q38) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,4.5) +
   labs(x = "Questão 38", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q38.pdf", width = 158, height = 93, units = "mm")
@@ -318,6 +321,7 @@ ggplot(q39) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,8.5)+
   labs(x = "Questão 39", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q39.pdf", width = 158, height = 93, units = "mm")
@@ -359,6 +363,7 @@ ggplot(q40) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,4.5)+
   labs(x = "Questão 40", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q40.pdf", width = 158, height = 93, units = "mm")
@@ -400,6 +405,7 @@ ggplot(q41) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,5.5) +
   labs(x = "Questão 41", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q41.pdf", width = 158, height = 93, units = "mm")
@@ -441,6 +447,7 @@ ggplot(q42) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,5.5) +
   labs(x = "Questão 42", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q42.pdf", width = 158, height = 93, units = "mm")
@@ -482,6 +489,7 @@ ggplot(q43) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,8) +
   labs(x = "Questão 43", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q43.pdf", width = 158, height = 93, units = "mm")
@@ -523,6 +531,7 @@ ggplot(q44) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,5.5) +
   labs(x = "Questão 44", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q44.pdf", width = 158, height = 93, units = "mm")
@@ -564,6 +573,7 @@ ggplot(q45) +
     size = 3
   ) +
   labs(x = "Questão 45", y = "Frequência") +
+  ylim (0,6.5) +
   theme_estat()
 #ggsave("colunas-q45.pdf", width = 158, height = 93, units = "mm")
 
@@ -604,6 +614,7 @@ ggplot(q46) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,6.5) +
   labs(x = "Questão 46", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q46.pdf", width = 158, height = 93, units = "mm")
@@ -645,6 +656,7 @@ ggplot(q47) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
+  ylim(0,8.5) +
   labs(x = "Questão 47", y = "Frequência") +
   theme_estat()
 #ggsave("colunas-q47.pdf", width = 158, height = 93, units = "mm")
