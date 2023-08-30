@@ -134,7 +134,7 @@ banco_num <- banco %>%
   select(q36,q37,q38,q39,q40,q41,q42,q43,q44,q45,q46,q47)
 
 
-### acertando texto para o boxplot
+### acertando texto para o gráfico de barras
 
 banco <- banco %>%
   mutate_at(vars(
@@ -166,7 +166,7 @@ mean(banco_num$q36)
 var(banco_num$q36)
 sd(banco_num$q36)
 
-## construindo o boxplot
+## construindo o gráfico
 q36 <- banco %>%
   count(`2 - A equipe da DPDI possui qualificação profissional e acadêmica em gestão da informação.`) %>%
   mutate(
@@ -182,14 +182,14 @@ q36$`2 - A equipe da DPDI possui qualificação profissional e acadêmica em ges
   factor(q36$`2 - A equipe da DPDI possui qualificação profissional e acadêmica em gestão da informação.`,
          levels = ordem)
 
-## boxplot
+## gráfico de barras
 ggplot(q36) +
   aes(
     x = `2 - A equipe da DPDI possui qualificação profissional e acadêmica em gestão da informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -208,7 +208,7 @@ mean(banco_num$q37)
 var(banco_num$q37)
 sd(banco_num$q37)
 
-## construindo o boxplot
+## construindo o gráfico
 q37 <- banco %>%
   count(`3. A equipe da DPDI É incentivada a buscar qualificação e atualização profissional em relação à gestão da informação.`) %>%
   mutate(
@@ -224,14 +224,14 @@ q37$`3. A equipe da DPDI É incentivada a buscar qualificação e atualização 
   factor(q37$`3. A equipe da DPDI É incentivada a buscar qualificação e atualização profissional em relação à gestão da informação.`,
          levels = ordem)
 
-## boxplot
+## gráfico de barras
 ggplot(q37) +
   aes(
     x = `3. A equipe da DPDI É incentivada a buscar qualificação e atualização profissional em relação à gestão da informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -250,7 +250,7 @@ mean(banco_num$q38)
 var(banco_num$q38)
 sd(banco_num$q38)
 
-## construindo o boxplot
+## construindo o gráfico
 q38 <- banco %>%
   count(`4. A equipe da DPDI possui composição multidisciplinar adequada para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`) %>%
   mutate(
@@ -266,14 +266,14 @@ q38$`4. A equipe da DPDI possui composição multidisciplinar adequada para dese
   factor(q38$`4. A equipe da DPDI possui composição multidisciplinar adequada para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`,
          levels = ordem)
 
-## boxplot
+## gráfico de barras
 ggplot(q38) +
   aes(
     x = `4. A equipe da DPDI possui composição multidisciplinar adequada para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -292,7 +292,7 @@ mean(banco_num$q39)
 var(banco_num$q39)
 sd(banco_num$q39)
 
-## construindo o boxplot
+## construindo o gráfico
 q39 <- banco %>%
   count(`5. A equipe da DPDI possui número de servidores suficiente para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`) %>%
   mutate(
@@ -308,14 +308,14 @@ q39$`5. A equipe da DPDI possui número de servidores suficiente para desenvolve
   factor(q39$`5. A equipe da DPDI possui número de servidores suficiente para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`,
          levels = ordem)
 
-## boxplot
+## gráfico de barras
 ggplot(q39) +
   aes(
     x = `5. A equipe da DPDI possui número de servidores suficiente para desenvolver as atividades da gestão da informação na Área de planejamento, desenvolvimento e informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -334,7 +334,7 @@ mean(banco_num$q40)
 var(banco_num$q40)
 sd(banco_num$q40)
 
-## construindo o boxplot
+## construindo o gráfico
 q40 <- banco %>%
   count(`1 - O processo de gestão da informação na Área de planejamento, desenvolvimento e informação, desde a coleta até o compartilhamento e análise, é eficaz.`) %>%
   mutate(
@@ -350,14 +350,14 @@ q40$`1 - O processo de gestão da informação na Área de planejamento, desenvo
   factor(q40$`1 - O processo de gestão da informação na Área de planejamento, desenvolvimento e informação, desde a coleta até o compartilhamento e análise, é eficaz.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q40) +
   aes(
     x = `1 - O processo de gestão da informação na Área de planejamento, desenvolvimento e informação, desde a coleta até o compartilhamento e análise, é eficaz.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -376,7 +376,7 @@ mean(banco_num$q41)
 var(banco_num$q41)
 sd(banco_num$q41)
 
-## construindo o boxplot
+## construindo o gráfico
 q41 <- banco %>%
   count(`2. O processo de coleta, armazenamento e gestão de informações relevantes feito pela Área de planejamento, desenvolvimento e informação é satisfatório.`) %>%
   mutate(
@@ -392,14 +392,14 @@ q41$`2. O processo de coleta, armazenamento e gestão de informações relevante
   factor(q41$`2. O processo de coleta, armazenamento e gestão de informações relevantes feito pela Área de planejamento, desenvolvimento e informação é satisfatório.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q41) +
   aes(
     x = `2. O processo de coleta, armazenamento e gestão de informações relevantes feito pela Área de planejamento, desenvolvimento e informação é satisfatório.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -418,7 +418,7 @@ mean(banco_num$q42)
 var(banco_num$q42)
 sd(banco_num$q42)
 
-## construindo o boxplot
+## construindo o gráfico
 q42 <- banco %>%
   count(`3. Os fluxos de compartilhamento de informações na Área de planejamento, desenvolvimento e informação é satisfatório.`) %>%
   mutate(
@@ -434,14 +434,14 @@ q42$`3. Os fluxos de compartilhamento de informações na Área de planejamento,
   factor(q42$`3. Os fluxos de compartilhamento de informações na Área de planejamento, desenvolvimento e informação é satisfatório.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q42) +
   aes(
     x = `3. Os fluxos de compartilhamento de informações na Área de planejamento, desenvolvimento e informação é satisfatório.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -460,7 +460,7 @@ mean(banco_num$q43)
 var(banco_num$q43)
 sd(banco_num$q43)
 
-## construindo o boxplot
+## construindo o gráfico
 q43 <- banco %>%
   count(`4. A Área de planejamento, desenvolvimento e informação possui indicadores e métricas claras para medir, avaliar e melhorar sistematicamente a eficácia de seus processos de gestão da informação.`) %>%
   mutate(
@@ -476,14 +476,14 @@ q43$`4. A Área de planejamento, desenvolvimento e informação possui indicador
   factor(q43$`4. A Área de planejamento, desenvolvimento e informação possui indicadores e métricas claras para medir, avaliar e melhorar sistematicamente a eficácia de seus processos de gestão da informação.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q43) +
   aes(
     x = `4. A Área de planejamento, desenvolvimento e informação possui indicadores e métricas claras para medir, avaliar e melhorar sistematicamente a eficácia de seus processos de gestão da informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -502,7 +502,7 @@ mean(banco_num$q44)
 var(banco_num$q44)
 sd(banco_num$q44)
 
-## construindo o boxplot
+## construindo o gráfico
 q44 <- banco %>%
   count(`1. A Área de planejamento, desenvolvimento e informação possui sistemas e tecnologias adequados para gerenciar e compartilhar informações de maneira eficiente.`) %>%
   mutate(
@@ -518,14 +518,14 @@ q44$`1. A Área de planejamento, desenvolvimento e informação possui sistemas 
   factor(q44$`1. A Área de planejamento, desenvolvimento e informação possui sistemas e tecnologias adequados para gerenciar e compartilhar informações de maneira eficiente.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q44) +
   aes(
     x = `1. A Área de planejamento, desenvolvimento e informação possui sistemas e tecnologias adequados para gerenciar e compartilhar informações de maneira eficiente.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -543,7 +543,7 @@ mean(banco_num$q45)
 var(banco_num$q45)
 sd(banco_num$q45)
 
-## construindo o boxplot
+## construindo o gráfico
 q45 <- banco %>%
   count(`2. A Área de planejamento, desenvolvimento e informação utiliza tecnologias de informação e comunicação de maneira adequada para apoiar o processo de gestão da informação.`) %>%
   mutate(
@@ -559,14 +559,14 @@ q45$`2. A Área de planejamento, desenvolvimento e informação utiliza tecnolog
   factor(q45$`2. A Área de planejamento, desenvolvimento e informação utiliza tecnologias de informação e comunicação de maneira adequada para apoiar o processo de gestão da informação.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q45) +
   aes(
     x = `2. A Área de planejamento, desenvolvimento e informação utiliza tecnologias de informação e comunicação de maneira adequada para apoiar o processo de gestão da informação.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -585,7 +585,7 @@ mean(banco_num$q46)
 var(banco_num$q46)
 sd(banco_num$q46)
 
-## construindo o boxplot
+## construindo o gráfico
 q46 <- banco %>%
   count(`3. O impacto do uso de tecnologias de informação na gestão da informação na Área de planejamento, desenvolvimento e informação é positivo.`) %>%
   mutate(
@@ -601,14 +601,14 @@ q46$`3. O impacto do uso de tecnologias de informação na gestão da informaç�
   factor(q46$`3. O impacto do uso de tecnologias de informação na gestão da informação na Área de planejamento, desenvolvimento e informação é positivo.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q46) +
   aes(
     x = `3. O impacto do uso de tecnologias de informação na gestão da informação na Área de planejamento, desenvolvimento e informação é positivo.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
@@ -627,7 +627,7 @@ mean(banco_num$q47)
 var(banco_num$q47)
 sd(banco_num$q47)
 
-## construindo o boxplot
+## construindo o gráfico
 q47 <- banco %>%
   count(`4. A Área de planejamento, desenvolvimento e informação utiliza abordagem planejada e sistemática para selecionar dados e informações úteis.`) %>%
   mutate(
@@ -643,14 +643,14 @@ q47$`4. A Área de planejamento, desenvolvimento e informação utiliza abordage
   factor(q47$`4. A Área de planejamento, desenvolvimento e informação utiliza abordagem planejada e sistemática para selecionar dados e informações úteis.`,
          levels = ordem)
 
-# boxplot
+## gráfico de barras
 ggplot(q47) +
   aes(
     x = `4. A Área de planejamento, desenvolvimento e informação utiliza abordagem planejada e sistemática para selecionar dados e informações úteis.`,
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
