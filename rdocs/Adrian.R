@@ -124,7 +124,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,6), breaks = c(0,2,4,6))+
   labs(x = " ", y = "Frequência") +
   theme_estat()
-ggsave("Q12.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q12.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 5
@@ -155,7 +155,7 @@ ggplot(classes) +
   labs(x = "   ", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q13.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q13.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 6
 
@@ -186,7 +186,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q14.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q14.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 # 7
 
 dados$Q7 <- factor(dados$Q7,
@@ -216,7 +216,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   labs(x = " ", y = "Frequência") +
   theme_estat()
-ggsave("Q15.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q15.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 8
 
@@ -246,7 +246,7 @@ ggplot(classes) +
   ) + 
   labs(x = " ", y = "Frequência") +
   theme_estat()
-ggsave("Q16.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q16.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 9
@@ -277,7 +277,7 @@ ggplot(classes) +
   ) + 
   labs(x = " ", y = "Frequência") +
   theme_estat()
-ggsave("Q17.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q17.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 10
@@ -309,7 +309,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q18.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q18.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 11
 
@@ -339,7 +339,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   labs(x = " ", y = "Frequência") +
   theme_estat()
-ggsave("Q19.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q19.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 12
 
@@ -370,7 +370,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,10), breaks = c(0,2,4,6,8,10))+
   theme_estat()
-ggsave("Q20.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q20.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 13
@@ -402,7 +402,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q21.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q21.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 14
@@ -434,7 +434,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,6), breaks = c(0,2,4,6))+
   theme_estat()
-ggsave("Q22.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q22.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 
@@ -468,7 +468,7 @@ ggplot(classes) +
   labs(x = " ", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q23.pdf", width = 158, height = 93, units = "mm")
+ggsave("Q23.pdf", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 
@@ -641,7 +641,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,6), breaks = c(0,2,4,6))+
   labs(x = "Questão 12", y = "Frequência") +
   theme_estat()
-ggsave("Q12.png", width = 158, height = 93, units = "mm")
+ggsave("Q12.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 5
@@ -672,7 +672,7 @@ ggplot(classes) +
   labs(x = "Questão 13", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q13.png", width = 158, height = 93, units = "mm")
+ggsave("Q13.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 6
 
@@ -703,7 +703,7 @@ ggplot(classes) +
   labs(x = "Questão 14", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q14.png", width = 158, height = 93, units = "mm")
+ggsave("Q14.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 # 7
 
 dados$Q7 <- factor(dados$Q7,
@@ -733,7 +733,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   labs(x = "Questão 15", y = "Frequência") +
   theme_estat()
-ggsave("Q15.png", width = 158, height = 93, units = "mm")
+ggsave("Q15.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 8
 
@@ -763,7 +763,7 @@ ggplot(classes) +
   ) + 
   labs(x = "Questão 16", y = "Frequência") +
   theme_estat()
-ggsave("Q16.png", width = 158, height = 93, units = "mm")
+ggsave("Q16.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 9
@@ -794,7 +794,7 @@ ggplot(classes) +
   ) + 
   labs(x = "Questão 17", y = "Frequência") +
   theme_estat()
-ggsave("Q17.png", width = 158, height = 93, units = "mm")
+ggsave("Q17.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 10
@@ -826,7 +826,7 @@ ggplot(classes) +
   labs(x = "Questão 18", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q18.png", width = 158, height = 93, units = "mm")
+ggsave("Q18.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 11
 
@@ -856,7 +856,7 @@ ggplot(classes) +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   labs(x = "Questão 19", y = "Frequência") +
   theme_estat()
-ggsave("Q19.png", width = 158, height = 93, units = "mm")
+ggsave("Q19.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 # 12
 
@@ -887,7 +887,7 @@ ggplot(classes) +
   labs(x = "Questão 20", y = "Frequência") +
   scale_y_continuous(limits = c(0,10), breaks = c(0,2,4,6,8,10))+
   theme_estat()
-ggsave("Q20.png", width = 158, height = 93, units = "mm")
+ggsave("Q20.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 13
@@ -919,7 +919,7 @@ ggplot(classes) +
   labs(x = "Questão 21", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q21.png", width = 158, height = 93, units = "mm")
+ggsave("Q21.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 # 14
@@ -951,7 +951,7 @@ ggplot(classes) +
   labs(x = "Questão 22", y = "Frequência") +
   scale_y_continuous(limits = c(0,6), breaks = c(0,2,4,6))+
   theme_estat()
-ggsave("Q22.png", width = 158, height = 93, units = "mm")
+ggsave("Q22.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 
@@ -985,7 +985,7 @@ ggplot(classes) +
   labs(x = "Questão 23", y = "Frequência") +
   scale_y_continuous(limits = c(0,8), breaks = c(0,2,4,6,8))+
   theme_estat()
-ggsave("Q23.png", width = 158, height = 93, units = "mm")
+ggsave("Q23.png", path = 'resultados/graficos_adrian', width = 158, height = 93, units = "mm")
 
 
 
