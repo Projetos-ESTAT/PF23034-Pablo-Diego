@@ -196,10 +196,10 @@ ggplot(q36) +
     size = 3
   ) +
   ylim(0,8) +
-  labs(x = "Questão 36", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q36.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q36.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q36.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 2 - q37 #######################
 
@@ -238,10 +238,10 @@ ggplot(q37) +
     size = 3
   ) +
   ylim(0,5.5) +
-  labs(x = "Questão 37", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q37.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q37.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q37.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 3 - q38 #######################
 
@@ -280,10 +280,10 @@ ggplot(q38) +
     size = 3
   ) +
   ylim(0,4.5) +
-  labs(x = "Questão 38", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q38.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q38.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q38.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 4 - q39 #######################
 
@@ -322,10 +322,10 @@ ggplot(q39) +
     size = 3
   ) +
   ylim(0,8.5)+
-  labs(x = "Questão 39", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q39.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q39.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q39.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 5 - q40 #######################
 
@@ -364,10 +364,10 @@ ggplot(q40) +
     size = 3
   ) +
   ylim(0,4.5)+
-  labs(x = "Questão 40", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q40.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q40.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q40.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 6 - q41 #######################
 
@@ -406,10 +406,10 @@ ggplot(q41) +
     size = 3
   ) +
   ylim(0,5.5) +
-  labs(x = "Questão 41", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q41.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q41.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q41.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 7 - q42 #######################
 
@@ -448,10 +448,10 @@ ggplot(q42) +
     size = 3
   ) +
   ylim(0,5.5) +
-  labs(x = "Questão 42", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q42.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q42.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q42.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 8 - q43 #######################
 
@@ -490,10 +490,10 @@ ggplot(q43) +
     size = 3
   ) +
   ylim(0,8) +
-  labs(x = "Questão 43", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q43.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q43.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q43.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 9 - q44 #######################
 
@@ -532,9 +532,10 @@ ggplot(q44) +
     size = 3
   ) +
   ylim(0,5.5) +
-  labs(x = "Questão 44", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q44.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q44.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q44.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 10 - q45 #######################
 
@@ -572,11 +573,11 @@ ggplot(q45) +
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 45", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   ylim (0,6.5) +
   theme_estat()
-#ggsave("colunas-q45.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q45.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q45.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 11 - q46 #######################
 
@@ -615,10 +616,10 @@ ggplot(q46) +
     size = 3
   ) +
   ylim(0,6.5) +
-  labs(x = "Questão 46", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q46.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q46.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q46.png", width = 158, height = 93, units = "mm")
 
 ####################### análise 12 - q47 #######################
 
@@ -657,7 +658,7 @@ ggplot(q47) +
     size = 3
   ) +
   ylim(0,8.5) +
-  labs(x = "Questão 47", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
-#ggsave("colunas-q47.pdf", width = 158, height = 93, units = "mm")
-
+ggsave("colunas-q47.pdf", width = 158, height = 93, units = "mm")
+ggsave("colunas-q47.png", width = 158, height = 93, units = "mm")
