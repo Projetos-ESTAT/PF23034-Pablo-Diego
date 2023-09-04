@@ -34,9 +34,9 @@ df_pablo <- df_pablo[-(1:2), (1:12)]
 # Gráfico 1
 ggplot(df_pablo) +
   aes(x = as.numeric(`1. Qual a sua idade?`)) +
-  geom_bar(fill = "#A11D21") +
+  geom_bar(fill = "#506175") +
   scale_x_binned() +
-  labs(x = "Questão 1", y = "Frequência") +
+  labs(x = '', y = "Frequência") +
   theme_estat()
 ggsave("graph1.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -55,13 +55,13 @@ ggplot(df_an2) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 2", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph2.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -80,13 +80,13 @@ ggplot(df_an3) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 3", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph3.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -95,9 +95,9 @@ ggsave("graph3.png", path = 'resultados/graficos_breno', width = 158, height = 9
 # Gráfico 4
 ggplot(df_pablo) +
   aes(x = as.numeric(df_pablo$`4. Há quantos anos é servidor da universidade?`)) +
-  geom_bar(fill = "#A11D21") +
+  geom_bar(fill = "#506175") +
   scale_x_binned(n.breaks = 6) +
-  labs(x = "Questão 4", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph4.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -106,9 +106,9 @@ ggsave("graph4.png", path = 'resultados/graficos_breno', width = 158, height = 9
 # Gráfico 5
 ggplot(df_pablo) +
   aes(x = as.numeric(df_pablo$`5. Há quantos anos está lotado no seu setor?`)) +
-  geom_bar(fill = "#A11D21") +
+  geom_bar(fill = "#506175") +
   scale_x_binned(n.breaks = 6) +
-  labs(x = "Questão 5", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph5.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -127,13 +127,13 @@ ggplot(df_an6) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 6", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph6.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -152,13 +152,13 @@ ggplot(df_an7) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 7", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph7.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -177,13 +177,13 @@ ggplot(df_an8) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 8", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
   theme_estat()
 ggsave("graph8.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -202,13 +202,14 @@ ggplot(df_an9) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 9", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
+  scale_x_discrete(labels = c("Concordo", "Concordo\n totalmente"))+
   theme_estat()
 ggsave("graph9.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -230,13 +231,14 @@ ggplot(df_an10) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 10", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
+  scale_x_discrete(labels = c("Discordo", "Nem concordo,\n nem discordo (Neutro)", "Concordo"))+
   theme_estat()
 ggsave("graph10.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
 
@@ -258,12 +260,14 @@ ggplot(df_an11) +
     y = n,
     label = label
   ) +
-  geom_bar(stat = "identity", fill = "#A11D21", width = 0.7) +
+  geom_bar(stat = "identity", fill = "#506175", width = 0.7) +
   geom_text(
     position = position_dodge(width = .9),
     vjust = -0.5, # hjust = .5,
     size = 3
   ) +
-  labs(x = "Questão 11", y = "Frequência") +
+  labs(x = "", y = "Frequência") +
+  scale_x_discrete(labels = c("Discordo", "Nem concordo,\n nem discordo (Neutro)", "Concordo"))+
   theme_estat()
 ggsave("graph11.png", path = 'resultados/graficos_breno', width = 158, height = 93, units = "mm")
+
